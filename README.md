@@ -6,3 +6,8 @@ The Shopkeeper is a Unity C# project that blends the concept of vending machines
   - Clone or download the project
   - Import project into Unity
   - Click that run button! \o/
+
+## Base Controls
+  - Movement: Directional keys
+  - Jump: Z
+  - Interact: F

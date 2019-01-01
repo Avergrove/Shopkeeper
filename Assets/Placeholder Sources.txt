@@ -1,0 +1,5 @@
+Sprites:
+	- Kenney Asset Pack - https://www.kenney.nl/assets
+
+Music:
+	- On to Plan B - Chroma Squad

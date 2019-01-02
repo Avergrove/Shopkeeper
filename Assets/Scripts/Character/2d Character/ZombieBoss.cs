@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Boss : CharacterBase
+public class ZombieBoss : Boss
 {
     // Start is called before the first frame update
     void Start()

@@ -2,8 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Boss : CharacterBase
+/// <summary>
+/// Defines a basic character
+/// </summary>
+public abstract class CharacterBase : MonoBehaviour, iDamageable
 {
+
+    public int hp;
+
+    public void onDamaged(int damage)
+    {
+        hp = hp - damage;
+    }
+
     // Start is called before the first frame update
     void Start()
     {

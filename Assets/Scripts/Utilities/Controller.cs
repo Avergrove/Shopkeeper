@@ -55,5 +55,10 @@ public class Controller : MonoBehaviour
         {
             controllable.OnInteractPressed();
         }
+
+        if (Input.GetButtonDown("Fire"))
+        {
+            controllable.OnFirePressed();
+        }
     }
 }

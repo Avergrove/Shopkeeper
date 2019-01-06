@@ -66,11 +66,12 @@ public class PlatformPlayerBase : MonoBehaviour, IControllable
     public virtual void OnLeftPressed()
     {
         rigidBody.velocity = new Vector2(-movementSpeed, rigidBody.velocity.y);
+        this.transform.localScale = new Vector2(-1, transform.localScale.y);
     }
 
     public virtual void OnMenuPressed()
     {
-        throw new System.NotImplementedException();
+        throw new System.NotImplementedException("Method Stub");
     }
 
     public virtual void OnPausePressed()
@@ -81,6 +82,7 @@ public class PlatformPlayerBase : MonoBehaviour, IControllable
     public virtual void OnRightPressed()
     {
         rigidBody.velocity = new Vector2(movementSpeed, rigidBody.velocity.y);
+        this.transform.localScale = new Vector2(1, transform.localScale.y);
     }
 
     public virtual void OnUpPressed()

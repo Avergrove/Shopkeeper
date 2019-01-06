@@ -11,6 +11,7 @@ public class Controller : MonoBehaviour
 {
     public string toControl;
     public IControllable controllable;
+    public GameObject inventoryUi;
 
     // Start is called before the first frame update
     void Start()
@@ -59,6 +60,22 @@ public class Controller : MonoBehaviour
         if (Input.GetButtonDown("Fire"))
         {
             controllable.OnFirePressed();
+        }
+
+        if (Input.GetButtonDown("Menu"))
+        {
+            controllable.OnMenuPressed();
+
+            if (inventoryUi.activeInHierarchy) { 
+                inventoryUi.SetActive(false);
+                Time.timeScale = 1;
+            }
+
+            else
+            {
+                inventoryUi.SetActive(true);
+                Time.timeScale = 0;
+            }
         }
     }
 }
